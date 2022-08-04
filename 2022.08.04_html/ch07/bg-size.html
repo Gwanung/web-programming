@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 500px;
+            height: 500px;
+            border: 2px double black;
+            background: url("images/bg4.jpg") no-repeat left top;
+        }
+        .bg2{
+            background-size: 200px 150px;
+        }
+        .bg3{
+            background-size: 60% 40%;
+        }
+        .bg4{
+            background-size: 100% 100%;
+        }
+        .bg5{
+            background-size: contain;
+        }
+        .bg6{
+            background-size: cover;
+        }
+    
+    </style>
+</head>
+<body>
+    <!-- div[class="bg$"]*6 $는 숫자 순서대로  -->
+    <div class="bg1"></div>
+    <div class="bg2"></div>
+    <div class="bg3"></div>
+    <div class="bg4"></div>
+    <div class="bg5"></div>
+    <div class="bg6"></div>
+    
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내부 스타일 시트</title>
+    <style>
+        /* 내부 스타일 시트 방법 */
+        /* 우선순위가 같을 경우에는 밑에 있는 스타일이 적용 된다. 하지만 !important 사용 시 우선 적용가능 */
+        /* 인라인/id/class/tag 순으로 우선순위가 적용된다. 왼쪽부터 더 높은 우선순위 */
+        /* class는 . id는 # 사용!! */
+        .accent{
+            font-weight: 700; /* bold와 같음 */
+            font-variant: small-caps;
+        }
+    </style>
+
+</head>
+<body>
+    <img src="images/book.png" alt="시드니 오페라하우스">
+    <h1 class="heading" id="hobor">세계 3대 미항</h1>
+    <p><span class="accent">시드니(sydney)</span>, 호주</p>
+    <p><span class="accent">리우데자네이루(Rio de janeiro)</span>, 브라질</p>
+    <p><span class="accent">나폴리(Naples)</span>, 이탈리아</p>
+
+    
+</body>
+</html>

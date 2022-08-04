@@ -15,7 +15,7 @@
         }
         fieldset{
             width: 500px;
-          
+            margin-bottom: 20px;          
         }
     </style>
     
@@ -29,7 +29,7 @@
                 <ul>
                     <li>
                         <label for="">이름</label>
-                        <input type="text" placeholder="공백없이 입력하세요">
+                        <input type="text" placeholder="공백없이 입력하세요" autofocus>
                     </li>
                     <li>
                         <label for="">메일주소</label>
@@ -37,7 +37,7 @@
                     </li>
                     <li>
                         <label for="">홈페이지(URL)</label>
-                        <input type="url" placeholder="공백없이 입력하세요">
+                        <input type="url" placeholder="공백없이 입력하세요" maxlength="50">
                     </li>
                 </ul>
             </fieldset>
@@ -54,11 +54,19 @@
                 <ul>
                     <li>
                         <label for="">주문 색상</label>
-                        <input type="text">
+                        <input type="text" list="colorlist">
+                        <datalist id="colorlist">
+                            <option value="black"></option>
+                            <option value="gray"></option>
+                            <option value="olive"></option>
+                            <option value="camel"></option>
+                        </datalist>
+                       
+                        
                     </li>
                     <li>
                         <label for="">주문 개수</label>
-                        <input type="range" min="0" max="10" step="1" value="0">
+                        <input type="range" min="1" max="10" step="1" value="1">
                         
                     </li>
                     <li>

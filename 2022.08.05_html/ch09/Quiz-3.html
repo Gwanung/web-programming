@@ -17,27 +17,36 @@
             border-bottom: 1px solid #ccc;
             background-color: steelblue;
             margin-right: 50px;
-            color: white;
             border-left: 10px solid blue;
             border-right: 10px solid powderblue;
             padding: 5px;
             line-height: 2em;
         }
+        #searchbar div a{
+            color: white;
+            text-decoration-line: none;
+        }
         #dna{
             width: 1000px;
             height: 500px;
+        }
+        #searchbar div a:hover{
+            font-size: 20px;
+            color: white;
+            background-color: lightskyblue;
+            text-decoration-line: none
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div id="searchbar">           
-            <div>Home</div>
-            <div>Research</div>
-            <div>Publications<br>People</div>
-            <div>Patents</div>
-            <div>Board</div>
-            <div>About Us<br><span>Contact Us</span></div>
+            <div><a href="#">Home</a></div>
+            <div><a href="#">Research</a></div>
+            <div><a href="#">Publications</a><br><a href="#">People</a></div>
+            <div><a href="#">Patents</a></div>
+            <div><a href="#">Board</a></div>
+            <div><a href="#">About Us</a><br><span><a href="#">Contact Us</a></span></div>
         </div>
         <div id="main">
             <h1>Welcome to Our Laboratory!</h1>

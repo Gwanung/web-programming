@@ -1,0 +1,11 @@
+package ch01;
+
+public class Light {
+
+	public static void main(String[] args) {
+		int lightspeed;
+		int lightspeed;
+		
+	}
+
+}

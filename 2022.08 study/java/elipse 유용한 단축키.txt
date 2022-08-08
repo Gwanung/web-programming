@@ -1,0 +1,8 @@
+ctrl + alt + 위 아랫키            아랫줄에 바로 복사  
+ctrl+d  삭제                       (vscode는 단어 복사  삭제는 ctrl+ x)
+ctrl + shift + f                    자동 줄정리
+shift + alt +  윗키                단어 선택
+shift + 엔터                        중간 줄바꿈 
+ctrl+ shift + o                     import 자동
+ctrl + shift + /                    주석
+ctrl + alt + r                      같은 변수 한 번에 값 변경

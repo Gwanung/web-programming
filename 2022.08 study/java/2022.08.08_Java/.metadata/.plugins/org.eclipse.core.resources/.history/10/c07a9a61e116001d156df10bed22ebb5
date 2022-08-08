@@ -1,0 +1,11 @@
+package ch01;
+
+public class Light {
+
+	public static void main(String[] args) {
+//		변수 선언
+		long lightspeed = 300000;   //30만 km
+		long distance;
+	}
+
+}

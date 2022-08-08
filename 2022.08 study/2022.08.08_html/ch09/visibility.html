@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* display의 none은 위치와 내용 모두 사라지지만, visibility의 hidden속성은 위치는 잡고있고 내용만 사라진다. */
+        img{
+            position: relative;
+        }
+        .invisible{
+            visibility: hidden;
+        }
+        .none{
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <img src="images/pic1.jpg" alt="" class="none">
+    <img src="images/pic2.jpg" alt="" class="invisible">
+    <img src="images/pic3.jpg" alt="">
+    
+</body>
+</html>

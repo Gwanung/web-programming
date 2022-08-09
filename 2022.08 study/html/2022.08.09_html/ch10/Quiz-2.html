@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            margin: 10px;
+        }
+        #tb1{
+            width: 400px;
+            margin: 0 auto;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }   
+        #top1{
+            text-align: center;
+            color: white;
+            background-color: darkslateblue;
+        }
+        #bottom1{
+            text-align:center;
+            color: white;
+            background-color: indigo;
+        }
+        #tb1 th{
+            background-color: rebeccapurple;
+        }
+        #tb1 th, td{
+            border: 1px solid black;
+            padding: 5px 10px;
+        }
+        .tr1 {
+            background-color: lightcoral    ;
+            text-align: center;
+        }
+        #tb2 {
+            width: 400px;
+            margin: 0 auto;
+            text-align: center;
+            empty-cells: hide;  
+            text-align: center;
+            border-spacing: 5px 5px;
+        }
+        #tb2 td{
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 5px;
+        }
+        .tr2{
+            background-color: lightcoral;
+            text-align: center;
+            color: white;
+        }
+        #top2{
+            text-align: center;
+            color: white;
+            background-color: darkred;
+        }
+        #bottom2{
+            background-color: brown;
+            color: white;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <table id="tb1">
+                <tr>
+                    <td colspan="5" id="top1">렌터카 요금표</td>
+                </tr>
+                <tr class="tr1">
+                    <td>차종</td>
+                    <td>24시간</td>
+                    <td>48시간</td>
+                    <td>72시간</td>
+                    <td>추가요금</td>
+                </tr>
+                <tr>
+                    <th>SM3</th>
+                    <td>45,000</td>
+                    <td>90,000</td>
+                    <td>135,000</td>
+                    <td>6,000</td>
+                </tr><tr>
+                    <th>모닝</th>
+                    <td>42,000</td>
+                    <td>84,000</td>
+                    <td>126,000</td>
+                    <td>6,000</td>
+                </tr><tr>
+                    <th>쏘울</th>
+                    <td>61,000</td>
+                    <td>122,000</td>
+                    <td>183,000</td>
+                    <td>9,000</td>
+                </tr><tr>
+                    <th>윈스톰</th>
+                    <td>94,000</td>
+                    <td>188,000</td>
+                    <td>282,000</td>
+                    <td>13,000</td>
+                </tr>
+                <tr>
+                    <td colspan="5" id="bottom1">제주 5월 기준이며 추가 요금은 시간당입니다.</td>
+                </tr>
+        </table>
+    </div>
+        <div id="container2">
+        <table id="tb2">
+                <tr>
+                    <td colspan="5" id="top2">렌터카 요금표</td>
+                </tr>
+                <tr class="tr2">
+                    <td>차종</td>
+                    <td>24시간</td>
+                    <td>48시간</td>
+                    <td>72시간</td>
+                    <td>추가요금</td>
+                </tr>
+                <tr>
+                    <td>SM3</td>
+                    <td>45,000</td>
+                    <td>90,000</td>
+                    <td>135,000</td>
+                    <td>6,000</td>
+                </tr><tr>
+                    <td>모닝</td>
+                    <td>42,000</td>
+                    <td>84,000</td>
+                    <td>126,000</td>
+                    <td>6,000</td>
+                </tr><tr>
+                    <td>쏘울</td>
+                    <td>61,000</td>
+                    <td>122,000</td>
+                    <td>183,000</td>
+                </tr><tr>
+                    <td>윈스톰</td>
+                    <td>94,000</td>
+                    <td>188,000</td>
+                    <td>282,000</td>
+                </tr>
+                <tr>
+                    <td colspan="5" id="bottom2">제주 5월 기준이며 추가 요금은 시간당입니다.</td>
+                </tr>
+        </table>
+    </div>
+    
+</body>
+</html>

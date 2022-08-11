@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a[title *="제과"]{
+            background-color: orange;
+            color: white;
+            font-weight: bold;
+        }
+        a[title $="기능장"]{
+            background-color: orange;
+            color: white;
+            font-weight: bold;
+        }
+        a[title *="제과기능사"]{
+            background-color: green;
+        }
+        a[title *="조리산업기사"]{
+            background-color: deeppink;
+            color: white;
+            font-weight: bold;
+        }
+        a[title *="조주"]{
+            background-color: blueviolet;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>속성 선택자 사용하기</h1>
+        <hr>
+        <h2>조리학부 자격증</h2>
+        <ul>
+            <li><a href="#" title="복어조리기능사">복어조리기능사</a></li>
+            <li><a href="#" title="조리기능사">조리기능사</a></li>
+            <li><a href="#" title="일식조리기능사">일식조리기능사</a></li>
+            <li title="제과기능장"><a href="#" title="제과기능장">제과기능장</a></li>
+            <li><a href="#" title="제과기능사">제과기능사</a></li>
+            <li><a href="#" title="제빵기능사">제빵기능사</a></li>
+            <li><a href="#" title="조리기능장">조리기능장</a></li>
+            <li><a href="#" title="조리산업기사(복어조리)">조리산업기사(복어조리)</a></li>
+            <li><a href="#" title="조리산업기사(양식)">조리산업기사(양식)</a></li>
+            <li><a href="#" title="조리산업기사(일식)">조리산업기사(일식)</a></li>
+            <li><a href="#" title="조리산업기사(중식)">조리산업기사(중식)</a></li>
+            <li><a href="#" title="조리산업기사(한식)">조리산업기사(한식)</a></li>
+            <li><a href="#" title="조주기능사">조주기능사</a></li>
+            <li><a href="#" title="중식조리기능사">중식조리기능사</a></li>
+            <li><a href="#" title="한식조리기능사">한식조리기능사</a></li>
+        </ul>
+    </div>
+</body>
+</html>

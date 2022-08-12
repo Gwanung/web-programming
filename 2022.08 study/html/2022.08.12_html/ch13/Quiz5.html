@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            margin-left: 100px;
+            margin-top: 50px;
+        }
+        .container .photo:hover{
+            box-shadow: 5px 5px 3px black;
+            transition: all 1s;
+            -webkit-transition: all 1s;
+            -o-transition: all 1s;
+            -ms-transition: all 1s;
+            -moz-transition: all 1s;
+            /* scale은 확대 축소!! */
+            transform: scale(1.5);
+            -webkit-transform: scale(1.5);
+            -o-transform: scale(1.5);
+            -moz-transform: scale(1.5);
+            -ms-transform: scale(1.5);
+            
+            -webkit-transform-origin: left, top;
+            -moz-transform-origin: left, top;
+            -o-transform-origin: left, top;
+            -ms-transform-origin: left, top;
+            transform-origin: left, top;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="images/lamp.jpg" alt="" class="photo">
+    </div>
+</body>
+</html>

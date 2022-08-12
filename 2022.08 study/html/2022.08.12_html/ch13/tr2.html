@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 40px;
+        }
+        h1{
+            text-align: center;
+            font-size: 52px;
+        }
+        .tr2{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border: 1px solid black;
+            /* property의 4개의 값이 hover가 적용되었을 때 나타남. */
+            transition-property: background-color, transform, width, height;   
+            transition-duration: 2s, 3s;
+        }
+        .tr2:hover{
+            width: 200px;
+            height: 200px;
+            background-color: #ff6e5f;
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="tr2"><h1>|</h1></div>
+</body>
+</html>

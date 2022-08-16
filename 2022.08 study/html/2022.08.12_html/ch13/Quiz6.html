@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상품소개</title>
+    <style>
+        .prod-list{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .prod-list li{
+            padding: 0;
+            margin: 10px;
+            overflow: hidden;
+            float: left;
+            position: relative;
+        }
+        .prod-list img{
+            margin: 0;
+            padding: 0;
+            z-index: 5;
+            border: 5px solid darkgray;
+        }
+        .prod-list .caption{
+            position: absolute;
+            width: 400px;   
+            height: 400px;
+            left: 200px;
+            bottom: 5px;
+            background-color: rgba(0, 0, 0, 0.6);    
+            opacity: 0;
+            transition: all 0.3s ease-in-out;
+            z-index: 10;
+        }
+        .prod-list li:hover .caption{
+            opacity: 1;
+            transform: translateX(-100px);
+        }
+        .prod-list .caption h3{
+            color: #fff;
+            padding-top: 300px;
+            padding-left: 20px;
+            font-weight: 300;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <ul class="prod-list">
+            <li>
+                <img src="images/friends.jpg" alt="">
+                <div class="caption">
+                    <h3>친구란,<br>
+                    두 몸에 깃든 하나의 영혼.</h3>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

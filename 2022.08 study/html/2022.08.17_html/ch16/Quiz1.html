@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 700px;
+            height: 700px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+        .container h4{
+            text-align: center;
+        }
+        .container div{
+            width: 200px;
+            height: 150px;
+            border: 1px solid #ccc;
+            margin-bottom: 5px;
+        }
+        #box1{
+            background-color: orange;
+        }
+        #box2{
+            background-color: dodgerblue;
+        }
+        #box3{
+            background-color: mediumorchid;
+        }
+        #box4{
+            background-color: lightgreen;
+        }
+
+        @media screen and (min-width:480px) and (max-width:767px) {
+            .container{
+                width: 300px;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+            }
+            .container div{
+                position: relative;
+                width: 300px; 
+            }
+            .container h4{
+            text-align: center;
+        }
+        }
+
+        @media screen and (min-width:768px) and (max-width:991px) {
+            .container{
+                width: 700px;
+                margin: 0 auto;
+                display: flex;
+            }
+            .container div{
+                width: 350px; 
+                flex-wrap: wrap;
+            }
+            .container h4{
+            text-align: center;
+        }
+            
+        }
+
+        @media screen and (min-width:992px) and(max-width:1920px) {
+            .container{
+                width: 700px;
+                margin: 0 auto;
+                display: flex;
+                flex-wrap: wrap;
+                align-content: stretch;
+            }
+            .container div{
+                width: 300px; 
+            }
+            .container h4{
+            text-align: center;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h4>반응형 웹 디자인</h4>
+        <div id="box1"></div>
+        <div id="box2"></div>
+        <div id="box3"></div>
+        <div id="box4"></div>
+    </div>
+</body>
+</html>

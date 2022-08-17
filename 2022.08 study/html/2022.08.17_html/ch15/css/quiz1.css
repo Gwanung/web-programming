@@ -1,0 +1,99 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 1920px;
+    height: 1080px;
+}
+header{
+    background-color: black;
+    width: 100%;
+    height: 100px;
+}
+header #city1{
+    color: white;
+    text-align: center;
+    line-height: 100px;
+}
+header #city2{
+    display: none;
+}
+header nav{
+    float: left;
+    background-color: #ccc;
+    width: 200px;
+    height: 1080px;
+}
+header nav ul{
+    list-style: none;
+}
+header nav ul li{
+    line-height: 30px;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+section{
+    padding-top: 15px;
+    width: 1720px;
+    float: right;
+    line-height: 50px;
+}
+footer{
+    width: 1720px;
+    float: right;
+}
+
+@media screen and (max-width:601px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        width: 600px;
+        height: 600px;
+    }
+    header #city1{
+        display: none;
+    }
+    header #city2{
+        display: block;
+        color: white;
+        text-align: center;
+        line-height: 100px;
+    }
+    header nav{
+        padding: 40px 20px;
+        width: 600px;
+        height: 100px;
+    }
+    header nav ul li a{
+        color: purple;
+        text-decoration: underline;
+    }
+    section{
+        width: 600px;
+        height: 250px;
+    }
+    section h1{
+        margin-left: 20px;
+    }
+    section p{
+        margin-left: 20px;
+        line-height: 30px;
+    }
+    footer{
+        width: 600px;
+        height: 50px;
+        background-color: black;
+    }
+    footer p {
+        line-height: 50px;
+        color: white;
+        text-align: center;
+    }
+}

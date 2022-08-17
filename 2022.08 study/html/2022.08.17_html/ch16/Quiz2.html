@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media screen and (max-width:767px) {
+            nav ul{
+                list-style: none;
+                background-color: black;
+                width: 100%;
+                height: 40px;
+            }
+            nav ul li{
+                display: inline-block;
+                color: white;
+                padding-left: 30px;
+                line-height: 40px;
+            }
+            section > img{
+                display: flex;
+                flex-direction: column;
+                margin-left: 40px;
+            }
+            section p{
+                width: 70%;
+            }
+            footer{
+                width: 70%;
+                background-color: black;
+            }
+            footer p{
+                color: darkorchid;
+                padding: 20px;
+            }
+        }
+
+        @media screen and (min-width:768px) and (max-width:991px) {
+            nav ul{
+                list-style: none;
+                background-color: black;
+                width: 100%;
+                height: 40px;
+            }
+            nav ul li{
+                display: inline-block;
+                color: white;
+                padding-left: 30px;
+                line-height: 40px;
+            }
+            section > img{
+                margin: 30px;
+            }
+            footer{
+                height: 300px;
+                background: url(images/footer.jpg) no-repeat;
+                background-size: cover;
+            }
+            footer p{
+                padding-top: 200px;
+                text-align: center;
+                color: white;
+                opacity: 0.7;
+            }
+        }
+        
+        @media screen and (min-width:992px){
+            nav ul{
+                list-style: none;
+                background-color: black;
+                width: 100%;
+                height: 40px;
+            }
+            nav ul li{
+                display: inline-block;
+                color: white;
+                padding-left: 30px;
+                line-height: 40px;
+            }
+            section > img{
+                margin: 30px;
+                float: left;
+            }
+            section p{
+                margin-top: 50px;
+            }
+            footer{
+                height: 300px;
+                background: url(images/footer.jpg) no-repeat;
+                background-size: cover;
+                clear: both;
+            }
+            footer p{
+                padding-top: 200px;
+                text-align: center;
+                color: white;
+                opacity: 0.7;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+        <nav>
+            <ul>
+                <li>메뉴1</li>
+                <li>메뉴2</li>
+                <li>메뉴3</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <img src="images/pic1.jpg" alt="">
+        <img src="images/pic2.jpg" alt="">
+        <img src="images/pic3.jpg" alt="">
+    </section>
+    <section>
+        <p>있는 이것을 능히 보이는 투명하되 이상의 낙원을 칼이다. 위하여 같이 힘차게 오직 듣는다. 뭇 창공에 천지는 말이다. 같이, 있는 되는 열매를 말이다. 있는 이것을 능히 보이는 투명하되 이상의 낙원을 칼이다.</p>
+    </section>
+    <footer>
+        <p>뭇 창공에 천지는 말이다. 같이, 있는 되는 열매를 말이다.</p>
+    </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            width: 100%;
+            margin: 0 auto;
+            background: url(images/windmill.jpg) no-repeat;
+            background-size: cover;
+        }
+        nav{
+            background-color: navy;
+            text-align: center;
+        }
+        nav ul{
+            list-style-type: none;
+            margin-bottom: 50px;
+        }
+        nav ul li{
+            color: white;
+            display: inline-block;
+            margin: 10px 50px;
+            font-size: 20px;
+        }
+        #menu{
+            display: none;
+        }
+        @media screen and (max-width: 720px) {
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            body{
+            width: 100%;
+            margin: 0 auto;
+            background: url(images/windmill.jpg) no-repeat;
+            background-size: cover;
+                }
+            nav{
+             
+            }
+            nav ul li{
+                width: 100%;
+                margin: 20px 50px;
+                display: block;
+            }
+            #menu{
+                width: 100%;
+                background-color: black;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+            <nav>
+                <ul>
+                    <li>HOME</li>
+                    <li>ABOUT</li>
+                    <li>WEB</li>
+                    <li>DESIGN</li>
+                    <li>MAP</li>
+                    <li>CONTACT</li>
+                    <p id="menu">MENU</p>
+                </ul>
+            </nav>
+    </div>
+</body>
+</html>

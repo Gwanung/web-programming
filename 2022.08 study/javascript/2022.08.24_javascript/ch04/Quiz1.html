@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var today = new Date(); 
+    var nowyear = today.getFullYear(),
+    nowMonth = today.getMonth(),
+    nowDate = today.getDate();
+
+    var thisDate  = new Date(2019, 11, 24);
+    var diffDate = today.getTime() - thisDate.getTime();
+
+    var result = Math.ceil( diffDate / (60 * 1000 * 60 * 24));   
+    document.write(result + "일 만났습니다.");
+
+    </script>
+</body>
+</html>

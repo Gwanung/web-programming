@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        td{
+            padding: 5px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table style="border-collapse: collapse;"></table>
+    <script>
+        var stNum = prompt("수강생은 몇명 입니까? : ", "");
+        var colNum = prompt("한 줄에 몇 명씩 앉습니까? :", "");
+        var rowNum = 0;
+        var t = "<table>";
+
+        document.write("<h1>컴퓨터공학과 자리배치도</h1>")
+
+        if(stNum%colNum ==0)
+            rowNum = stNum/colNum;
+        else
+            rowNum = parseInt(stNum/colNum) + 1;
+
+        for(var i=0; i<rowNum; i++){
+            t += "<tr>";
+            for(var j=1; j<=colNum; j++){
+                var stId = i*colNum + j;
+                if(stId>stNum)break;
+                t += "<td>컴공" + stId + "번</td>";
+            }
+            t +="</tr>"
+        }
+        t +="</table>"
+        document.write(t);
+    </script>
+</body>
+</html>

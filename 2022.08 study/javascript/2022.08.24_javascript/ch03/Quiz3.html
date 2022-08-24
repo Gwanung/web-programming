@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var year = prompt("현재 년도를 입력하세요 : ", "");
+        var month = prompt("현재 월을 입력하세요 : ", "");
+        var day;
+        switch(month){
+            case "1": day = 31;
+            case "3": day = 31;
+            case "5": day = 31;
+            case "7": day = 31;
+            case "8": day = 31;
+            case "10": day = 31;
+            case "12": day = 31;
+            break;
+
+            case "4": day = 30;
+            case "6": day = 30;
+            case "9": day = 30;
+            case "11": day = 30;
+            break;
+
+            case "2": 
+                day = 28;
+
+                if(year % 4 ==0 && year % 100 != 0 || year % 400 == 0){
+                    day = 29;
+                }
+                 break;
+        }
+        for(var i=1; i<=day; i++){
+            document.write(i + "일<br>");
+        }
+    </script>
+</body>
+</html>

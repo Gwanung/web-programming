@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var today = new Date(); 
+
+    var thisDate  = new Date(2019, 11, 24); // 월은 -1 (2019년 12월 24일)
+    var diffDate = today.getTime() - thisDate.getTime();
+
+    var result = Math.ceil( diffDate / (60 * 1000 * 60 * 24));   //1000ms * 60s * 60m * 24h
+    document.write(result + "일 만났습니다.<br>");
+
+
+    // 역순 
+    var anniversary = new Date(2019, 11, 24);
+    anniversary.setDate(thisDate.getDate() + 1000);
+    document.write(anniversary + "1000일 만났습니다.");
+    
+    </script>
+</body>
+</html>

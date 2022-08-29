@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        body{
+            text-align: center;
+            font-size: 30px;
+        }
+        p{
+            color: red;
+            margin-bottom: 30px;
+        }
+        span{
+            background-color: aquamarine;
+            margin-right: 30px;
+            color: black;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var number = prompt("전체 응모자 수", "");
+
+        var win =Math.floor(Math.random()*number +1);
+
+        document.write("<img src='images/dice.jpg'>");
+        document.write("<p><span>전체 응모자 수 :</span>" + number +"명</p>");
+        document.write("<p><span>당첨 번호 : </span>" + win + "번!!</p>");
+
+    </script>  
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var greenArr = ["교대", "방배", "강남"];
+        var yellowArr = ["미금", "정자", "수서"];
+
+        greenArr.splice(2, 1, "서초", "역삼");  //2번 인덱스 1개 데이터 삭제후 뒤에 배열값 삽입
+        console.log(greenArr);
+
+        var data1 = yellowArr.pop(); //수서 저장
+        var data2 = yellowArr.shift(); // 미금 저장     (stack 개념)
+
+        yellowArr.push(data2);
+        console.log(yellowArr);  // data2인 미금 맨 뒤에 저장
+
+        yellowArr.unshift(data1);
+        console.log(yellowArr);  // data1인 수서 맨 앞에 저장
+    </script>
+</body>
+</html>

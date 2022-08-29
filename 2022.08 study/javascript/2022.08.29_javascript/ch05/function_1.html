@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var count = 0;
+
+        myFnc();
+        function myFnc(){
+            count++;
+            document.write("Hello" + count);
+        }  //일반함수일경우 위아래가능 (호이스팅 방식)
+
+        myFnc();
+
+        var theFnc = function(){
+            count++;
+            document.write("Bye" + count, "<br>");
+        } //익명함수일경우 밑에 호출만 가능
+
+        theFnc();
+    </script>
+</body>
+</html>

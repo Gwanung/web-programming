@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+
+        function zoomIn(){
+            document.getElementById("bee").width = "500";
+            document.getElementById("bee").height = "330";
+            
+        }
+
+        function zoomOut(){
+            document.getElementById("bee").width = "200";
+            document.getElementById("bee").height = "130";
+        }
+
+        function zoom(zoomin){
+            var imgTag = document.getElementById("bee");
+            if(zoomin){
+                imgTag.width = "500";
+                imgTag.height = "330";
+            }else{
+                imgTag.width = "200";
+                imgTag.height = "130";
+            }
+        }
+
+        function zoom2(newWidth, newHeight){
+            var imgTag = document.getElementById("bee");
+            imgTag.width = newWidth;
+            imgTag.height = newHeight;
+        }
+    </script>
+</head>
+<body>
+    <img src="images/bee.jpg" width="200" height="130" id="bee" alt="">
+    <button onclick="zoom(true)">ZoomIn</button>
+    <button onclick="zoom2('150','120')">ZoomOut</button>
+</body>
+</html>

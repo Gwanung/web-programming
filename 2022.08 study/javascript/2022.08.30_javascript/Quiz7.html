@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 50px;
+        }
+        button{
+            margin-right: 50px;
+            width: 150px;
+            height: 50px;
+            background-color: aqua;
+            border-radius: 8px;
+            border: 3px solid black;
+        }
+    </style>
+    <script>
+        function displaySum(num){
+            
+            function Sum(num){
+                var sum = 0;
+                var i;
+                
+                for(i=1; i<=num; i++){
+
+                   sum += i;
+                }
+                return alert(num + "까지 더한 값은" + sum + "입니다.");
+       
+            }
+            Sum(num);
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <button onclick="displaySum(10)">10까지 더하기</button>
+        <button onclick="displaySum(50)">50까지 더하기</button>
+        <button onclick="displaySum(100)">100까지 더하기</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function TestScore(name, kor, eng){
+            this.userName = name;
+            this.korNum = kor;
+            this.engNum = eng;
+        }
+        TestScore.prototype.getTestInfo = function(){
+            document.write("이름: " + this.userName + "<br>");
+            document.write("국어 점수: " + this.korNum + "<br>");
+            document.write("영어 점수: " + this.engNum + "<br>");
+        }
+
+        TestScore.prototype.getAvg = function(){
+
+            return (this.korNum+this.engNum)/2;
+        }
+
+        var test = new TestScore("홍길동", 100, 50);
+        test.getTestInfo();
+        document.write("평균 점수: " + test.getAvg() + "점");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

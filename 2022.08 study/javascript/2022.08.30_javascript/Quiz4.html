@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Product(name, weight, price){
+            this.name = name;
+            this.weight= weight;
+            this.price = price;
+        }
+
+            Product.prototype.calculate = function(weight){
+                return (this.price/this.weight) * weight;
+            }
+
+        var product = new Product("돼지삼겹살", 100, 2000);
+        document.write(product.calculate(200) + "원");
+
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

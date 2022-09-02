@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function(){
+            $(".txt1").parents().css({"border" : "2px dashed #00f"});  // 상위 요소의 전체 요소에 파란색 점선 생성
+            $(".txt2").parents("div").css({"border" : "2px solid #f00"});  //상위 요소의 div만! 빨간색 실선 생성
+        })
+    </script>
+</head>
+<body>
+    <h1 class="title">선택자</h1>
+    <section>
+        <div>
+            <p class="txt1">내용</p>
+        </div>
+    </section>
+    <section>
+        <div>
+            <p class="txt2">내용</p>
+        </div>
+    </section>
+</body>
+</html>

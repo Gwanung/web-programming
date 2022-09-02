@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function(){
+            $("#menu li").eq(2).css({"background-color" : "#ff0"}); //eq는 정한 인덱스 요소만 적용 
+
+            $("#menu li:lt(2)").css({"background-color" : "#0ff"});  //lt는 인덱스보다 작은 인덱스 요소만 적용
+            
+            $("#menu li:gt(2)").css({"background-color" : "#f0f"}); // gt는 인덱스보다 큰 인덱스 요소만 적용
+        });
+    </script>
+</head>
+<body>
+    <h1>탐색 선택자</h1>
+    <ul id="menu">
+        <li>내용1</li>
+        <li>내용2</li>
+        <li>내용3</li>
+        <li>내용4</li>
+        <li>내용5</li>
+    </ul>
+</body>
+</html>

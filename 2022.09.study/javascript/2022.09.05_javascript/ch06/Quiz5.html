@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            width: 150px;
+            height: 50px;
+            margin-right: 30px;
+            background-color: deepskyblue;
+        }
+        img{
+            margin-top: 50px;
+            border: 1px solid black;
+            width: 500px;
+        }
+    </style>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function(){
+            $("#b1").click(function(){
+                $("#test").html("<img src ='images/sun.jpg'>");
+            });
+            $("#b2").click(function(){
+                $("#test").html("<img src ='images/moon.jpg'>");
+            });
+        })
+    </script>
+</head>
+<body>
+    <button id="b1">낮이라면 클릭!</button>
+    <button id="b2">밤이라면 클릭!</button>
+    <div id="test"></div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #detail{
+            width: 400px;
+            height: 90px;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding-top: 5px;
+            padding-left: 20px;
+            color: blue;
+        }
+    </style>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function(){
+            $("#trigger").click(function(){
+                $("#detail").html("<p>스터디 주제: HTML5, CSS, Java Script </p>\
+                                    <p>모집 대상: 신입생</p>");
+            
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>스터디 회원 모집</h1>    
+    <img src="images/click.jpg" alt="">
+    <p id="trigger">자세한 내용을 보려면 클릭</p>
+    <div id="detail"></div>
+</body>
+</html>

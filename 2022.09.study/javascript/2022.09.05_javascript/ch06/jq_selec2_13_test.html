@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function(){
+            var result1_1 = $("#inner_1 p").eq(0).is(":visible");  //t    내용1이 화면에 보이니까 
+            console.log(result1_1);
+
+            var result1_2 = $("#inner_1 p").eq(1).is(":visible");  //f  내용2가 안보이므로
+            console.log(result1_2);
+
+            var result1_3 = $("#chk1").is(":checked");  //t  체크1이 선택되었으니까
+            console.log(result1_3);
+
+            var result1_4 = $("chk2").is(":checked");  //f 체크2는 선택 x이므로
+            console.log(result1_4);
+        });
+    </script>
+</head>
+<body>
+    <div id="outer_wrap">
+        <h1>is()</h1>
+        <section id="inner_1">
+            <h2>문단 태그 영역</h2>
+            <p>내용1</p>
+            <p style="display: none;">내용2</p>
+        </section>
+        <section id="inner_2">
+            <h2>폼 태그 영역</h2>
+            <p>
+                <input type="checkbox" id="chk1" checked>
+                <label for="chk1">체크1</label>
+                <input type="checkbox" id="chk2">
+                <label for="chk2">체크2</label>
+            </p>
+        </section>
+    </div>
+</body>
+</html>

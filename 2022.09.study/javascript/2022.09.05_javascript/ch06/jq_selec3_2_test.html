@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function(){
+            var srcVal = $("#sec_1 img").attr("src");  //attr()은 새 속성을 생성 및 기존 속성 변경할 때 사용함!
+            console.log(srcVal);
+
+            $("#sec_1 img").attr({"width" : 200, "src" : srcVal.replace("1.jpg", "2.jpg"), "alt" : "바위"}).removeAttr("border");
+        });   //이미지를 가로 200변경, 1.jpg 에서 2.jpg로 변경하고 이미지가 없을경우 바위 글씨를 출력 후 테두리 삭제함!
+    </script>
+</head>
+<body>
+    <h1>
+        <strong>객체 조작 및 생성</strong>
+    </h1>
+    <section id="sec_1">
+    <h2>이미지 속성</h2>
+    <p>
+        <img src="images/math_img_1.jpg" alt="가위" border="2">
+    </p>
+    </section>
+</body>
+</html>

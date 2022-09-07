@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #img_ul{
+            float: right;
+            margin-bottom: 50px;
+        }
+        #img_ul li{
+            margin-right: 50px;
+            display: inline-block;
+            list-style: none;
+        }
+        h1{
+            clear: both;
+        }
+        div{
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+    </style>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function(){
+            var arr = ["white", "purple", "white", "aqua"];
+
+            $("#img_ul li").each(function(i, obj){
+                $(obj).click(function(){
+                    $("div").css({"background-color" : (arr[i])});
+                });
+            });
+            $("#img_ul li").click(function(){
+                $("div").css({"color" : "black"});
+            })
+            $("#f1, #f3").click(function(){
+                $("#n1").css({"display" : "none"});
+                $("#n2").css({"display" : "none"});
+            })
+
+            $("#f2").click(function(){
+                $("div").css({"color" : "white"});
+                $("#n1").css({"display" : "block"});
+                $("#n2").css({"display" : "none"});
+            })
+
+            $("#f4").click(function(){
+                $("#n1").css({"display" : "none"});
+                $("#n2").css({"display" : "block"});
+            })
+            
+        })
+    </script>
+</head>
+<body>
+    <ul id="img_ul">
+        <li id="f1"><img src="images/1.png" alt=""></li>
+        <li id="f2"><img src="images/2.png" alt=""></li>
+        <li id="f3"><img src="images/3.png" alt=""></li>
+        <li id="f4"><img src="images/4.png" alt=""></li>
+    </ul>
+    <h1>새내기들과 함께하는 학과 전체 MT</h1>
+    <div>
+        <h1 id="n1" style="display: none;"><strong>2</strong>학년 공지사항</h1>
+        <h1 id="n2" style="display: none;"><strong>4</strong>학년 공지사항</h1>
+        <br>
+        <p>안녕하십니까?</p>
+        <br>
+        <p>벌써 학기가 시작된지 한 달이 되어갑니다.</p>
+        <p>올해도 새내기들과 함께 하는 학과 전체 MT를 갑니다.</p>
+        <p>새내기들이 재학생과 교수님들과의 친목을 도모할 수 있는 자리를 마련하고자 합니다.</p>
+        <br>
+        <p>해마다 있는 행사지만 꼭 참석하셔서 사제간에, 선후배간에 돈독한 정을 쌓을 수 있기를 바랍니다.</p>
+        <ul>
+            <li><strong>행사명</strong> : 컴퓨터공학과 전체 MT</li>
+            <li><strong>행사목적</strong> : 선후배간, 사제간의 유대 관계 형성과 친목을 위함</li>
+            <li><strong>행사일</strong> : 3월 25일(금) ~ 3월 27일(일)</li>
+        </ul>
+    </div>
+</body>
+</html>

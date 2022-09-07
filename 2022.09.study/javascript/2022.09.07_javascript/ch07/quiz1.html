@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function(){
+            $("#btn1").click(function(){
+                alert("Background-color 값은 : " + $("#content").css("background-color"));
+            })
+
+            $("#btn2").click(function(){
+                alert("color 값은 : " + $("#content").css("color"));
+            })
+
+            $("#btn3").click(function(){
+                $("#content h2").html("3학년 공지사항").css({"color" : "black"});
+            })
+
+            $("#btn4").click(function(){
+                $("#date span").html("'(2박 3일)'");
+            });
+
+            $("#btn5").click(function(){
+                $("#detail").remove();
+            })
+
+            $("#btn6").click(function(){
+                $("#detail ul").empty();
+            })
+        });
+    </script>
+    <style>
+        p{
+            font-size: 14px;
+            line-height: 30px;
+        }
+        li{
+            font-size: 12px;
+            line-height: 30px;
+        }
+        #content{
+            width: 550px;
+            border: 2px solid #222;
+            padding: 15px;
+            background-color: green;
+            color: white;
+        }
+        button{
+            margin: 30px 15px;
+        }
+        
+        button:hover{
+            cursor: pointer;
+        }
+
+        .mybttn{
+            border: 1px solid #222;
+        }
+
+        .accent{
+            color: red;
+            font-size: 20px;
+            font-style: italic;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>새내기들과 함께하는 학과 전체 MT</h1>
+    <div id="content">
+        <h2></h2>
+        <p><span></span>컴공과 학생회장, 3학년 이OO입니다.</p>
+        <p>벌써 학기가 시작된 지 한 달이 되어갑니다. <br>
+           올해도 새내기들과 함께 하는 학과 전체 MT를 갑니다. <br>
+           새내기들이 재학생과 교수님들과의 친목을 도모할 수 있는 자리를 마련하고자 합니다.</p>
+        <p>해마다 있는 행사지만 꼭 참석하셔서 사제간에, 선후배간에 돈독한 정을 쌓을 수 있기를 바랍니다.</p>
+        <div id="detail">
+            <h3>세부사항</h3>
+            <ul>
+                <li><b>행사명</b> : 컴퓨터공학과 전체 MT</li>
+                <li><b>행사목적</b> : 선후배간, 사제간의 유대 관계 형성과 친목을 위함</li>
+                <li id="date"><b>행사일</b> : 3월 25일(금)~3월 27일(일)<span></span></li>
+            </ul>
+        </div>
+    </div>
+    <button id="btn1">배경색</button>
+    <button id="btn2">글자색</button>
+    <button id="btn3">내용추가</button>
+    <button id="btn4">내용추가2</button>
+    <button id="btn5">세부사항 전체삭제</button>
+    <button id="btn6">세부사항 내용삭제</button>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function(){
+            $("#add").on("click", function(){
+                var x = $("#text_area").val();
+                $("#div2").append("<p>" + x + "</p>");
+
+            })
+
+            $("#div2").on("click", function(){
+                $("#div2").text("");
+            })
+        })
+    </script>
+    <style>
+        body{
+            margin: 80px 40px;
+        }
+        #div1{
+            display: flex;
+        }
+        #text_area{
+            border: 2px solid black;
+            border-radius: 5px;
+            resize: none;
+        }
+        #add{
+            border: 2px solid black;
+            width: 100px;
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+        }
+        #div2{
+            padding:30px 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Web Programming</h1>
+    <p>공부할 주제를 기록해 보세요.</p>
+    <p>공부가 끝난 것은 클릭해서 삭제할 수 있습니다.</p>
+<div id="div1">
+    <textarea id="text_area" cols="50" rows="2"></textarea>
+    <input type="submit" value="추가" id="add">
+</div>
+<div id="div2">
+</div>
+</body>
+</html>

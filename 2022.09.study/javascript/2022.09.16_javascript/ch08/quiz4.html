@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function(){
+
+            var season = ["spring", "summer", "fall", "winter"];
+            
+            $("img").click(function(){
+                
+            })
+            
+            $("#img_1").click(function(){
+                $("#img_big").show();
+                $("#img_big").html("<img src='img/spring.jpg'>");
+            })
+            $("#img_big").click(function(){  // 4개다 같은 느낌이기때문에 반복해서쓰는것이 아니라 each()메소드 사용하기!!
+                $("#img_big").hide();
+            })
+
+        })
+
+
+    </script>
+    <style>
+        #img_smail{
+            display: flex;
+            flex-wrap: wrap;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin: 20px;
+            background-color: darkorchid;
+        }
+        img{
+            padding:20px 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>사용법</h1>
+    <ol>
+        <li>작은 이미지를 클릭하면 큰 이미지가 나타납니다.</li>
+        <li>큰 이미지를 클릭하면 큰 이미지가 사라집니다.</li>
+    </ol>
+    <div id="img_smail">
+        <img src="img/spring-s.jpg" alt="" id="img_1">
+        <img src="img/summer-s.jpg" alt="" id="img_2">
+        <img src="img/fall-s.jpg" alt="" id="img_3">
+        <img src="img/winter-s.jpg" alt="" id="img_4">
+    </div>
+    <div id="img_big">
+
+    </div>
+</body>
+</html>

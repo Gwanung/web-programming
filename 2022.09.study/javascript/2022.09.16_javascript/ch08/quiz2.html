@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <script>
+
+            $(document),ready(function(){
+
+                $("button").click(function(){
+                    
+                    $("img").animate({width: "600px"}, "slow")
+                    .animate({height: "398px"}, "slow")
+                    .animate({borderRadius: "50px"}, "slow");
+                    $("span").animate({fontSize: "1.5em"}, 1000);
+            
+                
+                });
+            });
+    </script>
+    <style>
+        body{
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        button{
+            width: 130px;
+            height: 30px;
+            border: 1px solid #ccc;
+
+        }
+        img{
+            width: 400px;
+            border: 1px solid black;
+        }
+        span{
+            color: blue;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <img src="img/winter.JPG" alt="">
+    <p><span>한국의 겨울</span> 너의 부재를 덮어주는 사방의 눈.눈.</p>
+    <button>확대하기</button>
+</body>
+</html>

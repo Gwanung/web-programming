@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function(){
+            $("#intro1").hide();
+            $("#intro2").hide();
+
+
+            $("h2").click(function(){
+                $("ul li").css({"display" : "block"});
+                $("body").css({"margin-left" : "100px"});
+                $("#intro1, #intro2").css({"width" : "300px", "height" : "300px"});
+                $("#intro1 li, #intro2 li").css({"padding" : "40px 10px 10px 10px"});
+                $("#intro1, #intro2").show();
+            })
+        })
+    </script>
+    <style>
+        ul li{
+            display: inline-block;
+            list-style-type: none;
+            margin-right: 100px;
+        }
+        h2{
+            font-size: 15px;
+            width: 100px;
+            height: 30px;
+            padding: 5px;
+            box-shadow: 2px 2px 5px black;
+            background-color: cornflowerblue;
+        }
+        .card{
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>컴퓨터 공학과 교수 소개</h1>
+    <ul>
+        <li>
+            <h2 id="prof1">홍길동 교수</h2>
+            <div id="intro1" class="card">
+                <ul>
+                    <li>소속: 컴퓨터공학과</li>
+                    <li>전공: 프로그래밍언어</li>
+                    <li>전화: xxx-xxx-xxxx</li>
+                    <li>연구실: 공학관 103호</li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <h2 id="prof2">한라산 교수</h2>
+            <div id="intro2" class="card">
+                <ul>
+                    <li>소속: 컴퓨터공학과</li>
+                    <li>전공: 분산처리</li>
+                    <li>전화: xxx-xxx-xxxx</li>
+                    <li>연구실: 공학관 101호</li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>

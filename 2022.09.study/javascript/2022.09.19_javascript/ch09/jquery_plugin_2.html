@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <script>
+        $(function(){
+            
+            $("#startDate").datepicker({
+                minDate: +1,
+                maxDate: "+1M",
+                dateFormat: "D, yy-mm-dd"
+            });
+            var a = ("#startDate").val();
+
+            $("#btn1").click(function(){
+                var date = new Date(a);
+                var date2 = new Date();
+                var what_date = date2.getTime() - date.getTime();
+                var what_day = what_date / (1000*60*60*24);
+                $("#txt1").html("오늘부터 " + what_day + "일 지났습니다.");
+            })
+
+        });
+    </script>
+</head>
+<body>
+    <p>
+        <label for="startDate">날짜선택</label>
+        <input type="text" name="startDate" id="startDate">
+    </p>
+    <button id="btn1">확인</button>
+    <p id="txt1"></p>
+</body>
+</html>

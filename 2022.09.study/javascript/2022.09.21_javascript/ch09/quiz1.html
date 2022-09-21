@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <script>
+        $(function(){
+            $("#owl").owlCarousel({
+                items:4,
+                loop:true,
+                nav:true,
+                autoplay:true,
+            })
+        })
+    </script>
+</head>
+<style>
+    div{
+        text-align: center;
+    }
+    #text_box h3{
+        text-align: left;
+    }
+    button{
+        background-color: blue;
+        color: white;
+        border-radius: 5px;
+        width: 100px;
+        height: 50px;
+    }
+</style>
+<body>
+    <h1>String</h1>
+    <div id="container">
+        <div id="owl">
+            <div class="item">
+                <img src="images/things-1.jpeg" alt="">
+            </div>
+            <div class="item">
+                <img src="images/things-2.jpeg" alt="">
+            </div>
+            <div class="item">
+                <img src="images/things-3.jpeg" alt="">
+            </div>
+            <div class="item">
+                <img src="images/things-4.jpeg" alt="">
+            </div>
+        </div>
+        <div id="text_box">
+        <h3>신입생을 모집합니다.</h3>
+        <p>String은 신입생들 뿐만 아니라 재학생들에게도 활짝 열려 있습니다. 기타를 못치셔도 동아리의 강습을 통해 기초부터 배울 수 있습니다.
+            또한 선배들로부터 대학생활에 대한 많은 조언도 들을 수 있을 것입니다. 언제나 환영합니다.
+        </p>
+        <button>노크하세요</button>
+        </div>
+    </div>
+</body>
+</html>

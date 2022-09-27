@@ -2,7 +2,7 @@ select * from usertbl;
 
 select addr, row_number() over(partition by addr order by mdate) as " 지역별 가입일 순위", username, mdate from usertbl;  -- 2번문제
 
-select username, addr as "AD", mdate as "가입일", abs(mdate - (lead(mdate) over (order by mdate))) as "가입일자 차이" from usertbl;  --3번문제
+select username, addr as "AD", mdate as "가입일", abs(mdate - (lead(mdate, 1, mdate) over (order by mdate))) as "가입일자 차이" from usertbl;  --3번문제
 
 select * from pivotTest;
 
@@ -26,7 +26,6 @@ select employee_id, first_name, phone_number, job_id as "department_name" from h
 select H.employee_id, H.first_name || H.last_name as "name", H.phone_number, J.job_title 
 from hr.employees H inner join hr.jobs J on H.job_id = J.job_id 
 inner join hr.job_history HH on J.job_id = HH.job_id where J.job_id = 'ST_CLERK'; --7번문제
-
 
 select avg(salary) from hr.employees where job_id like 'IT%'; --8번문제
 

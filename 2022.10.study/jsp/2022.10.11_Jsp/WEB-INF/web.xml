@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+	<error-page>
+		<exception-type>java.lang.Exception</exception-type>
+		<location>/ch09/exceptionType_error.jsp</location>
+	</error-page>
+	<error-page>
+		<error-code>500</error-code>
+		<location>/ch09/errorPage_error.jsp</location>
+	</error-page>
+</web-app>

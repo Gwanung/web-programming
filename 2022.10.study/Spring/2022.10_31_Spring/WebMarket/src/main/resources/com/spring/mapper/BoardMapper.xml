@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--   namespace 는 실행 할 경로 (java 파일)쿼리문(select update delete) 안의 id값은 메소드! -->
+
+<mapper namespace="com.spring.mapper.BoardMapper">
+	<select id="getList" resultType="com.spring.domain.BoardVO">
+		select * from board order by num desc
+	</select>
+	
+</mapper>
